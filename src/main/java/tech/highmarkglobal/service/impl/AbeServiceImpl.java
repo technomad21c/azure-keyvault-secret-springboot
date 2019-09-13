@@ -19,12 +19,12 @@ public class AbeServiceImpl implements AbeService {
 	}
 
 	@Override
-	public String getMasterKey(MasterKey mk) {
-		return azureKeyVault.getKey(mk.getBountyId(), mk.getTesterId());
+	public String getMasterKey(String bountyId, String testerId) {
+		return azureKeyVault.getKey(bountyId, testerId);
 	}
 
 	@Override
-	public String getmasterKey(MasterKey mk) { 
-		return azureKeyVault.getKey(mk.getBountyId(), mk.getTesterId(), mk.getMasterKey());
+	public String getmasterKey(String bountyId, String testerId, String contractId) { 
+		return azureKeyVault.getKey(bountyId, testerId, contractId);
 	}
 }

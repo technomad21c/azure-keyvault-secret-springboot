@@ -4,6 +4,6 @@ import tech.highmarkglobal.domain.MasterKey;
 
 public interface AbeService {	
 	boolean storeMasterKey(MasterKey mk);
-	public String getMasterKey(MasterKey mk);
-	public String getmasterKey(MasterKey mk);
+	public String getMasterKey(String bountyId, String testerId);
+	public String getmasterKey(String bountyId, String testerId, String contractId);
 }
