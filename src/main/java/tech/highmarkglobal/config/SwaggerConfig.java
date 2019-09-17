@@ -28,7 +28,7 @@ public class SwaggerConfig {
 	   }
 	   @SuppressWarnings("rawtypes")
 	private ApiInfo getApiInfo() {
-		   return new ApiInfo("Highmark Global REST API for Bounty Microservices",
+		   return new ApiInfo("Highmark Global REST API for Cloud Key Storage Microservices",
 
 	                "Highmark Global REST API for Online Store",
 
